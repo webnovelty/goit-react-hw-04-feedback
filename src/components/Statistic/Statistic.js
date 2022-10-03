@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Section, List, TextP, TextN, ListItem } from './Statistic.styled'
+import { Section, List, TextP, TextN, ListItem } from './Statistic.styled';
 
 const Statistic = ({
 	good,
