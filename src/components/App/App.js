@@ -7,12 +7,6 @@ import Container from './App.styled';
 
 export default function App() {
 
-	const BUTTON_NAMES = {
-		good: 'good',
-		neutral: 'neutral',
-		bad: 'bad'
-	};
-
 	const [good, setGood] = useState(0);
 	const [neutral, setNeutral] = useState(0);
 	const [bad, setBad] = useState(0);
@@ -42,7 +36,7 @@ export default function App() {
 		return Math.round((good / countTotalFeedback()) * 100);
 	};
 
-	const btnTitle = Object.keys(BUTTON_NAMES);
+	const btnTitle = Object.keys({ good, neutral, bad });
 	const total = countTotalFeedback();
 	const positivePercentage = countPositiveFeedbackPercentage();
 
